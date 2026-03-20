@@ -29,10 +29,13 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: '3.8'
-      # step 3: Install dependencies
-      - name: Install dependencies
+          
+      # step 3: upgrade & Install dependencies
+      - name: upgrade dependencies
         run:
          python -m pip install --upgrade pip
+      - name: Install dependencies
+        run:
          pip install -r Requirements.txt
       # step 4: Run tests
       - name: Run tests
