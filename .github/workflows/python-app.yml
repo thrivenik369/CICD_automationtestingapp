@@ -32,7 +32,7 @@ jobs:
       # step 3: Install dependencies
       - name: Install dependencies
         run:
-         python -m pip install --upgrade pip
+         python -m pip install --upgrade
          pip install -r Requirements.txt
       # step 4: Run tests
       - name: Run tests
